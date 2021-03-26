@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/*================================================================================
+	コンテンツ全体（#container）
+================================================================================*/
+#container {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header {
+	background-image: url(../img/bg_header.jpeg);
+	background-repeat: repeat-x;
+}
+#header img{
+	padding: 10px;
+}
+#content {
+	margin-top: 20px;
+	display: flex;	/* Flexコンテナをつくる */
+}
+#footer {
+	margin-top: 15px;
+	margin-bottom: 65px;
+	font-size: 12px;
+}
+#main {
+	width: 690px;
+	background-image: url(../img/bg_header.jpeg);
+}
+#aside {
+	width: 250px;
+	background-image: url(../img/bg_header.jpeg);
+	margin-left: 20px;
+}
+
+/*================================================================================
+	ヘッダ（#header）
+================================================================================*/
+#header h1 {
+	margin-left: 20px;
+	padding-top: 17px;
+	height: 66px;
+}
+#header ul {
+	margin-top: 18px;
+	background-image: linear-gradient(#d3a865, #895e1a); 	/*グラデーション*/
+	display: flex;
+	justify-content: center;
+}
+#header li {
+	list-style: none;	/* 「・」をトル */
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	height: 32px;
+
+}
+#header a{
+	display: block;
+	text-decoration: none;
+}
+#header .nav_content{
+	text-decoration: none;
+	color: #412204;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+/*================================================================================
+	メインコンテンツ部（#main）
+================================================================================*/
+#main .kodawari h2 {
+	padding: 47px 0 50px 19px;	/* 上部に47px、下部に50px、左に19pxの余白を付ける */
+	background-image: url(../img/main.jpg);
+	background-repeat: no-repeat;
+}
+#main .kodawari p, #main .ninki p {
+	margin-right: 20px;
+	margin-left: 20px;
+	line-height: 1.5;
+}
+#main .kodawari p img {	/* h2の中のimgは除外するため、あえて「p img」と記述する */
+	float: right;
+}
+#main .kodawari p:after {	/* 「floatが指定された要素の親要素」をセレクタとする */
+	content: "";
+	display: block;
+	clear: both;
+}
+#main .ninki h2, #main .osusume h2{
+	background-image: linear-gradient(#d3a865, #895e1a);
+	margin-top: 1rem;
+	margin-right: 20px;
+	padding: 5px 0 5px 20px;
+	border-radius: 0 4px 4px 0;
+}
+#main .ninki h3 {
+	margin: 1rem 20px 0 20px;
+	border-bottom: solid 1px #412204;
+	padding-bottom: 5px;
+	background-image: url(../img/icn_bean.png);
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+#main .osusume div {	/* 3つのdlをくくったdiv */
+	margin: 10px 0 20px 20px;	/* 「上」「左右」「下」を指定） */
+	display: flex;
+}
+#main .osusume dl {
+	width: 210px;
+	margin-right: 10px;
+	background-image: url(../img/bg_menu.png);
+}
+#main .osusume dt {
+	background-color: #D2A76A;
+	padding: 5px;
+	background-image: url(../img/bg_bean.png);
+	background-repeat: no-repeat;
+	background-position: right 6px bottom -10px;
+}
+#main .osusume dd p{
+	margin: 0.5em;
+	font-size: 14px;
+}
+
+/*================================================================================
+	サイドバー（#aside）
+================================================================================*/
+#aside h2{
+	display: none;
+}
+#aside li {
+	list-style: none;
+	margin-top: 20px;
+	height: 70px;
+	text-align: center;
+}
+
+/*================================================================================
+	モバイルデバイス対応
+================================================================================*/
+@media(max-width: 480px){	/* ウィンドウ幅が480px以下になったら */
+	#container{
+		width: auto;	/* 幅指定を解除する */
+	}
+	#content{
+		flex-direction: column;	/*#mainと#asideの並べ方を横並び→縦並びにする */
+	}
+	#main{
+		width: auto;	/* 幅指定を解除する */
+	}
+	#main .kodawari h2 {
+		padding-right: 20px;	/* 見出し画像の右に20pxの余白を追加 */
+		background-position: center top;	/*背景画像の配置を変更する */
+	}
+	#main .kodawari h2 img {
+		max-width: 100%;	/* 見出し画像が画面幅を超えないようにする */
+	}
+	#main .kodawari p img {
+		margin-bottom: 10px;	/*下部に10pxの余白を付ける */
+		margin-right: auto;	/* 画像を中央に配置する */
+		margin-left: auto;
+		display: block;	/* 写真とテキストが縦に並ぶようにする */
+		max-width: 100%;/* 画像が画面幅を超えないようにする */
+		float: none;	/* floatによる回り込みをやめる */
+	}
+	#main .osusume div{
+		margin-bottom: 0;	/* 下部の余白を0にする */
+		flex-direction: column;	/*#main .osusume dlの並べ方を縦並びにする */
+	}
+	#main .osusume dl {
+		width: auto;	/* #main .osusume dlの幅指定を解除する */
+		margin-right: 20px;	/* 右余白を20pxにする */
+		text-align: center;	/* 写真とテキスト（dd）をセンター揃えにする */
+	}
+	#main .osusume dd img {
+		margin-top: 15px;	/* 画像の上部に15pxの余白をつける */
+	}
+	#aside{
+		margin-left: 0;	/* 左余白を0にする */
+		width: 100%;	/* 幅を100%にする（値がautoだと伸長しない） */
+		padding-bottom: 20px;	/* 要素の内側下部に余白をつける */
+	}
+	#aside h2{
+		display: block;	/* 非表示だったh2を表示する */
+		margin-top: 20px;	/* 上部に20pxの余白をつける */
+		text-align: center;	/* テキストをセンター揃えにする */
+	}
+	#footer {
+		text-align: center;	/* フッタの中身をセンター揃えにする */
+	}
+}

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel = "preconnect" href = "https://fonts.gstatic.com">
+  <link href = "https://fonts.googleapis.com/css2？family = Oswald＆ display = swap" rel = "stylesheet ">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>Sshop onlinesotre</title>
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  <script src="jquery-3.1.1.min.js"></script>
+
+  <script>
+  $(function(){
+  	$("div.panel .service:not("+$("ul.tab li a.selected").attr("href")+")").hide();
+  	$("ul.tab li a").click(function(){
+  		$("ul.tab li a.selected").removeClass("selected");
+  		$(this).addClass("selected");
+  		$("div.panel .service").hide();
+  		$($(this).attr("href")).show();
+  		return false;
+  	});
+  });
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+    <div class="head-top">
+      <h1 class="logo">
+       <img src="img/logo2.png" alt="Sshop">
+      </h1>
+      <ul class="cart_area">
+       <li><a href="#"><img src="img/ka-to.png" alt=""></a></li>
+       <li><a href="#"><img src="img/kensaku.png" alt=""></a></li>
+     </ul>
+    </div>
+   </div>
+
+    <nav class="site-top">
+      <input type="checkbox" id="site-nav__toggle" class="site-nav__toggle">
+			<label  for="site-nav__toggle" class="site-nav__toggle-label">
+				<span>
+					<span>メニューを開く</span>
+				</span>
+			</label>
+
+
+     <ul class="main-nav">
+        <li class="main-nav__item">
+         <a href="#">HOME</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#recommend">RECOMMEND ITEMS</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#hit">HIT LIST</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#access">ACCESS</a>
+        </li>
+     </ul>
+    </nav>
+
+  </header>
+
+  <main class=site-main>
+     <div class="container container--large">
+      <div class="fade show">
+        <div><img src="img/main2.jpg" alt=""></div>
+        <div><img src="img/main6.jpg" alt=""></div>
+        <div><img src="img/main5.jpg" alt=""></div>
+      </div>
+      <div id="container">
+        <ul class="tab">
+          <li><a href="#tab1" class="selected">WOMEN</a></li>
+          <li><a href="#tab2">MEN</a></li>
+          <li><a href="#tab3">KIDS</a></li>
+        </ul>
+
+      <div class="panel">
+        <section id="tab1" class="service">
+          <div class="column">
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/arc.jpg" alt="ARCTERYX">
+                </div>
+                <div class="media-object__content">
+                  <h3>ARC'TERYX</h3>
+                  <p>MAITIONS 26L BACKPACK</p>
+                  <p>¥18,700</P>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/gymphlex.jpg" alt="Gymphlex">
+                </div>
+                <div class="media-object__content">
+                  <h3>Gymphlex</h3>
+                  <p>ツイルストライプラガーシャツ</p>
+                  <p>¥14,080</p>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/auralee.jpg" alt="AURALEE">
+                </div>
+                <div class="media-object__content">
+                  <h3>AURALEE</h3>
+                  <p>スウェットビックプルオーバー</p>
+                  <p>¥22,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/tu.jpg" alt="チュニック">
+                </div>
+                <div class="media-object__content">
+                  <h3>Gymphlex</h3>
+                  <p>バンドカラーチュニック</p>
+                  <p>¥14,080</P>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/syuzu.jpg" alt="靴">
+                </div>
+                <div class="media-object__content">
+                  <h3>drogheria crivellini</h3>
+                  <p>ベルベットストラップシューズ</p>
+                  <p>¥13,200</p>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/out.jpg" alt="アウター">
+                </div>
+                <div class="media-object__content">
+                  <h3>DANTON</h3>
+                  <p>ナイロンワークコート</p>
+                  <p>¥23,980</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="tab2" class="service">
+          <div class="column">
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/bag.jpg" alt="KAPTAIN">
+                </div>
+                <div class="media-object__content">
+                  <h3>KAPTAIN SUNSHINE</h3>
+                  <p>トラベラージェットケース</p>
+                  <p>¥12,100</P>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/JKT.jpg" alt="Gymphlex">
+                </div>
+                <div class="media-object__content">
+                  <h3>ARC'TERYX</h3>
+                  <p>GORE-TEX フードジャケット</p>
+                  <p>¥77,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/pantu.jpg" alt="AURALEE">
+                </div>
+                <div class="media-object__content">
+                  <h3>ARC'TERYX VEILANCE</h3>
+                  <p>ショートパンツ</p>
+                  <p>¥24,200</p>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/arc.jpg" alt="リュック">
+                </div>
+                <div class="media-object__content">
+                  <h3>ARC'TERYX</h3>
+                  <p>MANTIS 32L BACKPACK</p>
+                  <p>¥20,900</P>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/cap.jpg" alt="キャップ">
+                </div>
+                <div class="media-object__content">
+                  <h3>NEW ERA</h3>
+                  <p>Casual Classic ドジャーズ</p>
+                  <p>¥4,180</p>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/bode.jpg" alt="ラガーシャツ">
+                </div>
+                <div class="media-object__content">
+                  <h3>Gymphlex</h3>
+                  <p>ツイルストライプラガーシャツ</p>
+                  <p>¥14,080</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="tab3" class="service">
+          <div class="column">
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/vest.jpg" alt="Vest">
+                </div>
+                <div class="media-object__content">
+                  <h3>Gymphlex</h3>
+                  <p>キッズボタンパーカーベスト</p>
+                  <p>¥10,780</P>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/ot.jpg" alt="ジャケット">
+                </div>
+                <div class="media-object__content">
+                  <h3>DANTON</h3>
+                  <p>キッズフリースジャケット</p>
+                  <p>¥12,980</p>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/kd.jpg" alt="カーディガン">
+                </div>
+                <div class="media-object__content">
+                  <h3>ORCIVAL</h3>
+                  <p>キッズクルーネック</p>
+                  <p>¥8,250</p>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/ceck.jpg" alt="チェックワンピース">
+                </div>
+                <div class="media-object__content">
+                  <h3>O'NEIL OF DUBLIN</h3>
+                  <p>キッズキルトスカート</p>
+                  <p>¥14,850</P>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/paka.jpg" alt="パーカー">
+                </div>
+                <div class="media-object__content">
+                  <h3>ORCIVAL</h3>
+                  <p>キッズプルオーバーパーカー</p>
+                  <p>¥12,980</p>
+                </div>
+              </div>
+            </div>
+            <div class="column__item">
+              <div class="media-object">
+                <div class="media-object__img">
+                  <img src="img/kutusita.jpg" alt="靴下">
+                </div>
+                <div class="media-object__content">
+                  <h3>FALKA</h3>
+                  <p>FAMILY SOCK KIDS</p>
+                  <p>¥1,100</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+     </div>
+   </div>
+   <div id="recommend" class="massage">
+     <h2 class="heading__01">RECOMMEND ITEMS</h2>
+
+     <section class="service">
+       <div class="column recommend" >
+         <div class="column__recommend">
+           <div class="media-object">
+             <div class="media-object__img">
+               <img src="img/kunit.jpg" alt="ニット">
+             </div>
+             <div class="media-object__content">
+               <h3>Laurence J. Smith</h3>
+               <p>クルーネックニット</p>
+               <p>¥20,680</P>
+             </div>
+           </div>
+         </div>
+         <div class="column__recommend">
+           <div class="media-object">
+             <div class="media-object__img">
+               <img src="img/denimu.jpg" alt="パンツ">
+             </div>
+             <div class="media-object__content">
+               <h3>THE SHINZONE</h3>
+               <p>TOMBOY PANTS</p>
+               <p>¥19,800</p>
+             </div>
+           </div>
+         </div>
+         <div class="column__recommend">
+           <div class="media-object">
+             <div class="media-object__img">
+               <img src="img/down.jpg" alt="ダウン">
+             </div>
+             <div class="media-object__content">
+               <h3>Gymphlex</h3>
+               <p>ホワイトグースダウンコート</p>
+               <p>¥38,500</p>
+             </div>
+           </div>
+         </div>
+         <div class="column__recommend">
+           <div class="media-object">
+             <div class="media-object__img">
+               <img src="img/down2.jpg" alt="ダウン">
+             </div>
+             <div class="media-object__content">
+               <h3>Gymphlex</h3>
+               <p>ダウンコート</p>
+               <p>¥35,200</P>
+             </div>
+           </div>
+         </div>
+         <div class="column__recommend">
+           <div class="media-object">
+             <div class="media-object__img">
+               <img src="img/tu.jpg" alt="チュニック">
+             </div>
+             <div class="media-object__content">
+               <h3>Gymphlex</h3>
+               <p>バンドカラーワンピース</p>
+               <p>¥14,080</p>
+             </div>
+           </div>
+         </div>
+         </div>
+       </div>
+     </section>
+
+     <div  id="hit" class="massage">
+       <h2 class="heading__01">HIT LIST</h2>
+
+       <section class="service">
+         <div class="column recommend" >
+           <div class="column__recommend">
+             <div class="media-object">
+               <div class="media-object__img">
+                 <img src="img/t.jpg" alt="ボーダーTsyatu">
+                 <span class="rank">1</span>
+               </div>
+               <div class="media-object__content">
+                 <h3>INSCRIRE</h3>
+                 <p>ビッグロングスリーブ</p>
+                 <p>¥19,800</P>
+               </div>
+             </div>
+           </div>
+           <div class="column__recommend">
+             <div class="media-object">
+               <div class="media-object__img">
+                 <img src="img/jack.jpg" alt="靴">
+                 <span class="rank">2</span>
+               </div>
+               <div class="media-object__content">
+                 <h3>CONVERSE</h3>
+                 <p>JACK PURCELL</p>
+                 <p>¥6,600</p>
+               </div>
+             </div>
+           </div>
+           <div class="column__recommend">
+             <div class="media-object">
+               <div class="media-object__img">
+                 <img src="img/kd2.jpg" alt="カーディガン">
+                 <span class="rank">3</span>
+               </div>
+               <div class="media-object__content">
+                 <h3>roberto collina</h3>
+                 <p>Vネックニットカーディガン</p>
+                 <p>¥26,400</p>
+               </div>
+             </div>
+           </div>
+           <div class="column__recommend">
+             <div class="media-object">
+               <div class="media-object__img">
+                 <img src="img/bag2.jpg" alt="鞄">
+                 <span class="rank">4</span>
+               </div>
+               <div class="media-object__content">
+                 <h3>ORCIVAL</h3>
+                 <p>2WAYトートバッグ</p>
+                 <p>¥10,780</P>
+               </div>
+             </div>
+           </div>
+           <div class="column__recommend">
+             <div class="media-object">
+               <div class="media-object__img">
+                 <img src="img/bode.jpg" alt="Tsyatu">
+                 <span class="rank">5</span>
+               </div>
+               <div class="media-object__content">
+                 <h3>Gymphlex</h3>
+                 <p>ストライプラガーシャツ</p>
+                 <p>¥14,080</p>
+               </div>
+             </div>
+           </div>
+           </div>
+         </div>
+       </section>
+
+    <div  id="access" class="massage">
+      <h2 class="heading__01">ACCESS</h2>
+      <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.758481233264!2d139.69974481455063!3d35.658321680199734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8e2f081dd9%3A0xf3f86301e6a1bc4f!2sBshop!5e0!3m2!1sja!2sjp!4v1613902885001!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container container--large">
+      <ul class="guide">
+        <li ><a href="#">ご利用ガイド</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="#">採用情報</a></li>
+      </ul>
+        <img src="img/logo3.png" alt="logo">
+        <p class="copyright">
+          Copyrigft(c) Sshop Co., Ltd. All Rights Reserved.
+        </p>
+    </div>
+  </footer>
+
+  <div class="go-to-top">
+    <button type="button" class="btn" onclick="location.href='#'">▲</button>
+  </div>
+
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="slick/slick.min.js"></script>
+
+   <script>
+     $(document).ready(function(){
+     $('.fade').slick({
+      autoplay: true,
+      fade:true
+    });
+    });
+   </script>
+</body>
+</html>

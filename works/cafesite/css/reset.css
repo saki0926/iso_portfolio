@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+body, div, ul, dl, dt, dd, h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+body {
+	background-image:url(../img/bg_body.png);
+}
