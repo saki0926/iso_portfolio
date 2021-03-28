@@ -83,7 +83,7 @@ img{
 .site-header .page-header__inner {
   display: flex;
   align-items: center;
-  height: 200px;
+  height: 250px;
   padding: 0 100px;
   background: url(img/main_visual.jpg) center top no-repeat;
   background-size: cover;
