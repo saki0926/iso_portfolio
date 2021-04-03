@@ -13,13 +13,14 @@ img{
 	max-width: 100%;
 	height: auto;
 }
-
+body{
+	margin: 0;
+}
 /* container */
 .container{
-	margin: 0 auto;
+	margin:0 auto;
 	padding: 0 ;
-	max-width: 800px;
-	line-height: 1.6;
+	max-width:750px;
 }
 .container--large{
 	max-width: 1300px;
@@ -317,6 +318,11 @@ img{
   bottom: 0;
   background: linear-gradient(135deg, transparent 0%, transparent 50%, #00592A 50%, #00592A 100%);
 }
+
+.advantage .media-object{
+	margin-left: 20px;
+	margin-right: 20px;
+}
 .advantage .media-object__content h3{
 	padding-bottom: 0;
 	font-size: 15px;
@@ -370,6 +376,8 @@ img{
 
 .client-voice .column{
 	flex-direction: column;
+	margin-left: 85px;
+	margin-right: 85px;
 }
 
 .client-voice img{
@@ -378,7 +386,6 @@ img{
 
 .client-voice .column__item{
 	text-align: center;
-	width: 100%;
 	margin-bottom: 40px;
 	border: 1px solid #00592A;
 	border-radius: 5px;
@@ -390,7 +397,6 @@ img{
 	margin-top: 0;
 	color: white;
 	font-size: 15px;
-	height: 80px;
 }
 .client-voice p{
 	padding: 10px;
@@ -403,6 +409,8 @@ img{
 @media (min-width:768px) {
 .client-voice .column{
 		flex-direction: row;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.client-voice .column{
 		justify-content: space-between;
@@ -473,6 +481,11 @@ img{
 	display: flex;
 	justify-content: space-between;
 }
+.site-footer .row ul{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 .site-footer li{
 	list-style: none;
 
@@ -486,24 +499,4 @@ img{
 }
 .site-footer li:first-child{
 	padding-bottom: 10px;
-}
-
-/* go-to-top */
-
-.go-to-top{
-	position: fixed;
-	z-index: 1;
-	font-size: 12px;
-	right: 20px;
-	bottom: 20px;
-}
-
-.go-to-top button{
-	display: inline-block;
-	padding: 10px;
-	background-color: #222;
-	border: none;
-	border-radius: 50%;
-	color: #fff;
-	cursor: pointer;
 }
