@@ -80,7 +80,7 @@ li {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #fff;
+  background-color: #d3d3d3;
   box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
 }
 
@@ -89,17 +89,11 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
+  text-align: right;
+
 }
 
-.header-logo {
-  padding-bottom: 10px;
-  margin-right: 20px;
-  letter-spacing: .05em;
-}
 
-.header-logo a {
-  color: #333;
-}
 
 .header-nav-list {
   display: flex;
@@ -144,7 +138,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85vh;
+  height: 60vh;
   text-align: center;
 }
 
@@ -153,16 +147,9 @@ li {
 }
 
 .main-visual-title {
-  height: 70px;
+  height: 110px;
   text-align: center;
   margin-bottom: 30px;
-}
-.main-visual-subtitle {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1;
-  margin-bottom: 40px;
-  letter-spacing: .08em;
 }
 
 /*--------------------------------
@@ -246,6 +233,7 @@ li {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .profile-img {
   width: 20%;
   margin-right: 30px;
@@ -256,6 +244,20 @@ li {
 }
 .profile-body {
   flex: 1;
+}
+.profile-body dt{
+  font-weight: bold;
+  width:70px;
+  float: left;
+  padding-bottom: 20px;
+  display: block;
+}
+.profile-body dd{
+padding-bottom: 20px;
+margin-left: 70px;
+}
+.profile-body dd span{
+  padding-left: 20px;
 }
 .profile-body p:not(:last-child) {
   margin-bottom: 30px;
@@ -408,7 +410,7 @@ li {
 
   /*  メインビジュアル */
   .main-visual {
-    height: 75vh;
+    height: 45vh;
   }
 
   .main-visual-inner {
@@ -456,6 +458,7 @@ li {
   /* About */
   .profile {
     display: block;
+    margin :auto;
   }
   .profile-img {
     width: 150px;
